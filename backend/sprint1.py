@@ -17,7 +17,6 @@ def gettingdatafromAPI():
     content_type = "json"
     include = "days"
 
-    # basic query including location
     api_query = f"{base_url}{location}/{start_date}/{end_date}?unitGroup={unit_group}&contentType={content_type}&include={include}&key={API_key}"
 
     print('Collecting your data from...', api_query)
