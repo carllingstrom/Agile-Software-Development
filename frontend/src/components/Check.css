@@ -1,15 +1,15 @@
-  
-  .panel h2 {
-    font-family: 'Roboto', sans-serif; /* Futuristic font */
-    font-size: 24px; /* Font size */
-    margin-bottom: 20px; /* Bottom margin */
+.panel h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
   }
   
   .panel p {
-    margin: 10px 0; /* Margin for paragraphs */
+    margin: 10px 0; 
   }
+
   
-  .panel button {
+  .panel button{
     margin-top: 20px;
     background-color: #4CAF50; 
     color: white; 
@@ -27,19 +27,8 @@
   .panel button:hover {
     background-color: #45a049; 
   }
-  
 
-.summary{
-    flex-direction: column;
-}
 
-/* New styles for chart container */
-.chart-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-canvas {
-  max-width: 600px; /* Adjust the max-width to fit your layout */
+.panel{
+  flex-direction: column;
 }
