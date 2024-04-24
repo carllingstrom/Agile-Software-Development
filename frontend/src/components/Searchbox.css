@@ -1,0 +1,92 @@
+.panel {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 662px;
+    height: 433px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 4px 2px rgba(89, 144, 198, 0.15); /* x-offset, y-offset, blur-radius, spread-radius, color */
+    box-shadow: 2px 2px 30px 10px rgba(89, 144, 198, 0.20); /* x-offset, y-offset, blur-radius, spread-radius, color */
+    border-radius: 14px;
+
+  }
+  
+  .placeholder {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+  }
+  
+  .searchbox {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #fefefe; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out; 
+    width: 350px;
+  }
+  
+  .searchbox:hover {
+    border-color: #666;
+  }
+  
+  .searchbox:focus {
+    outline: none;
+    border-color: #007bff; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
+  }
+  
+
+  .input-group {
+    position: relative;
+  }
+
+  .text-section{
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .input-group::after {
+    content: 'öre/kWh'; /* Text for the label */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #666; 
+  }
+  
+  .input-group:nth-child(2)::after {
+    content: 'kWh'; /* Text for the label */
+  }
+  
+
+    
+  
+  
+
+  
+  .input-group2 {
+    position: relative;
+  }
+
+  
+  
+  .input-group2::after {
+    content: 'kvm'; /* Text for the label */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #666; 
+  }
+  
+  .input-group2:nth-child(2)::after {
+    content: 'kr'; /* Text for the label */
+  }
+  
+/* Searchbox.css */
