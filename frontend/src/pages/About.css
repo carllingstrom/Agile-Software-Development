@@ -1,0 +1,115 @@
+.about-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+}
+
+.about-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+.about-nav a, .menu-icon {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.header-content {
+  text-align: left;
+  position: relative;
+  top: -80px; /* Adjust the value as needed to align the text */
+}
+
+.lightning-logo {
+  width: 80px; /* Adjust size of the logo */
+  position: relative; /* Position relative for fine-tuning */
+  top: 35px; /* Align vertically with the title */
+  margin-left: 25px;
+}
+
+.solar-panel-text {
+  font-size: 1.5em; /* Slightly larger font size */
+  font-weight: bold;
+  display: block; /* Makes it go to the next line */
+  margin-top: 0.5rem; /* Give some space between the title and subheading */
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 492px;
+  border-radius: 12px 0px 0px 0px;
+  margin-right: 2rem;
+}
+
+.logo-image {
+  width: 600px; /* Adjust size as needed */
+  align-self: center; /* Align vertically */
+}
+
+.about-logo {
+  width: 450px; /* Adjust size as needed */
+  height: 450px; /* Keep the height and width the same for a circle */
+  border-radius: 50%;
+  overflow: hidden; /* Ensures the image fits within the border radius */
+  margin-left: 105px;
+}
+
+.about-logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* Ensure the grid container distributes space evenly */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates 3 columns of equal width */
+    grid-gap: 20px; /* space between grid items */
+    padding: 20px;
+}
+
+/* Uniform styling for each green box */
+.green-box {
+    justify-content: space-between; /* Aligns content from top to bottom */
+    background-color: #e4f5d4; /* Example background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%; /* Each box will fill the grid cell */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Consistent spacing and alignment for heading and paragraph */
+.green-box h2, .green-box p {
+    margin: 0 0 10px 0; /* Adjusted margins for consistency */
+}
+
+/* Make sure the boxes stretch to the same height */
+.green-box {
+    min-height: 300px; /* Minimum height; adjust as necessary */
+}
+
+/* Flex column settings to make content uniform */
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Additional styling as needed... */
