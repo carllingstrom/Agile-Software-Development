@@ -1,11 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Autocomplete, LoadScript } from '@react-google-maps/api';
 import './Searchbox.css';
+import {useTranslation} from 'react-i18next';
 
 const Searchbox = () => {
   const [address, setAddress] = useState("");
   const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
   const autocomplete = useRef(null);
+
+  const { t } = useTranslation(); // We add this Hook to access the translation functions
+
 
   const [loading, setLoading] = useState(true);
 
@@ -46,14 +50,15 @@ const Searchbox = () => {
     >
       <div className='panel'>
         <div className='placeholder'>
-          <p>Skriv din adress här</p>
+        {/* Use translation function for text */}
+        <p>{t('translation.insert_address')}</p>
           <Autocomplete
             onLoad={(auto) => { autocomplete.current = auto; }}
             onPlaceChanged={handlePlaceChanged}
           >
             <input
               type='text'
-              placeholder='Adress...'
+              placeholder={t('translation.address')} 
               className='searchbox'
             />
           </Autocomplete>
