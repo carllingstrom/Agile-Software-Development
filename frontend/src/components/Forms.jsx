@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Check from './Check';
 
 
-const Forms = () => {
+const Forms = () => { //Creating the forms title bar that shows user the steps
   const steps = [
     { title: 'Insert Address', component: <Searchbox /> },
     { title: 'Insert Roofarea', component: <Roofarea /> },

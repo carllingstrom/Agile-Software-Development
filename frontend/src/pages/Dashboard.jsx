@@ -1,11 +1,10 @@
-import React from 'react'
 import axios from 'axios';
-import {  useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Dashboard.css'
-
-
+import Chart from 'chart.js/auto';
 
 const Dashboard = () => {
+    const [chartData, setChartData] = useState(null);
 
     const axiosInstance = axios.create({
         baseURL: "http://localhost:8000",
@@ -14,8 +13,6 @@ const Dashboard = () => {
           "Content-Type": "application/json", 
         },
       });
-
-
 
   
   useEffect(() => {
@@ -45,10 +42,61 @@ const Dashboard = () => {
    
   }, []);
 
+useEffect(() => {
+    if (chartData) {
+      renderChart(chartData.ACCF);
+    }
+  }, [chartData]);
+
+  const renderChart = (acff) => {
+    const years = Object.keys(acff).map(Number);
+    const accfValues = Object.values(acff);
+
+    const chartData = {
+      labels: years,
+      datasets: [{
+        label: 'ACCF',
+        data: accfValues,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    };
+
+    const ctx = document.getElementById('acffChart').getContext('2d');
+
+    // Destroy existing chart instance if it exists
+    if (window.acffChartInstance) {
+      window.acffChartInstance.destroy();
+    }
+
+    // Create new chart instance
+    window.acffChartInstance = new Chart(ctx, {
+      type: 'bar',
+      data: chartData,
+      options: {
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Year'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'ACCF'
+            },
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  };
 
   return (
     <div>
-        <h1>Chart here</h1>
+        <canvas id="acffChart"></canvas> {}
     </div>
   )
 }

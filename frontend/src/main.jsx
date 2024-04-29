@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx'; // Corrected import path
 import './index.css'; // Corrected import path
-import About from './pages/About.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from './pages/Dashboard.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,8 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/about' element={<About />} />
-
+      <Route path='/dashboard' element={<Dashboard />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
