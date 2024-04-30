@@ -3,6 +3,7 @@ import axios from 'axios';
 import Chart from 'chart.js/auto';
 import './Check.css';
 import { Link } from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 
 const Check = () => {
   const [inputLat, setInputLat] = useState("");
@@ -13,6 +14,7 @@ const Check = () => {
   const [inputCost, setInputCost] = useState("");
   const [inputUsage, setInputUsage] = useState("");
   const [acffData, setAcffData] = useState(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const localStorageCoordinates = JSON.parse(window.localStorage.getItem('input_cords'));
@@ -28,14 +30,14 @@ const Check = () => {
 
   return (
     <div className='panel summary'>
-      <h2>Summary</h2>
-      <p>Address: {inputAddress}</p>
-      <p>Investment: {inputInvestment}</p>
-      <p>Area: {inputArea}</p>
-      <p>Cost: {inputCost}</p>
-      <p>Usage: {inputUsage}</p>
+      <h2>{t('translation.summary')}</h2>
+      <p>{t('translation.address')}: {inputAddress}</p>
+      <p>{t('translation.investment')}: {inputInvestment}</p>
+      <p>{t('translation.area')}: {inputArea}</p>
+      <p>{t('translation.cost')}: {inputCost}</p>
+      <p>{t('translation.usage')}: {inputUsage}</p>
       <Link to='/dashboard'>
-        <button>Calculate my ACCF</button>
+        <button>{t('translation.calculate_button')}</button>
       </Link>
     </div>
   );

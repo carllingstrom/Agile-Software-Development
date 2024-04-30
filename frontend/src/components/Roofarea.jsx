@@ -1,10 +1,13 @@
 import React from 'react';
 import {useState, useEffect} from "react";
 import './Searchbox.css'; 
+import {useTranslation} from 'react-i18next';
 
 
 const Roofarea = () => {
     const [area, setArea] = useState(0);
+
+    const { t } = useTranslation();
 
     const [investment, setInvestment] = useState(0);
 
@@ -24,7 +27,7 @@ const Roofarea = () => {
     <div className='panel'>
           <div className='placeholder'>
           
-          <p style={{ marginTop: '50px' }}>Vad är din förväntade investering?</p>
+          <p style={{ marginTop: '50px' }}>{t('translation.expected_investment')}</p>
           <div className='input-group2'>
 
         <input
@@ -35,7 +38,7 @@ const Roofarea = () => {
         </div>
 
 
-        <p style={{ marginTop: '50px' }}>Vilken förväntad area har dina solceller?</p>
+        <p style={{ marginTop: '50px' }}>{t('translation.expected_area')}</p>
         <div className='input-group2'>
 
         <input

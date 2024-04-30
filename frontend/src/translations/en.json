@@ -1,7 +1,7 @@
 {
     "translation": {
       "summary": "Summary",
-      "address": "Address...",
+      "address": "Address",
       "investment": "Investment",
       "area": "Area",
       "cost": "Cost",
@@ -18,7 +18,9 @@
       "placeholder_cost": "What is your average electricity price?",
       "expected_investment": "What is your expected investment?",
       "expected_area": "What expected area do your solar panels have?",
-      "navbar_title": "SolarSaver"
+      "navbar_title": "SolarSaver",
+      "next": "next",
+      "previous": "previous"
     }
   }
   

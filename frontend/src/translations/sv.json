@@ -18,7 +18,9 @@
       "placeholder_cost": "Vad är ditt genomsnittliga elpris?",
       "expected_investment": "Vad är din förväntade investering?",
       "expected_area": "Vilken förväntad area har dina solceller?",
-      "navbar_title": "SolarSaver"
+      "navbar_title": "SolarSaver",
+      "next": "nästa",
+      "previous": "förgående"
     }
   }
   
