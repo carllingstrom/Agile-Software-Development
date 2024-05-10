@@ -1,0 +1,26 @@
+{
+    "translation": {
+      "summary": "Summary",
+      "address": "Address",
+      "investment": "Investment",
+      "area": "Area",
+      "cost": "Cost",
+      "usage": "Usage",
+      "calculate_button": "Calculate my ACCF",
+      "insert_address": "Insert Address",
+      "insert_roofarea": "Insert Roofarea",
+      "insert_powercost": "Insert Powercost",
+      "check": "Check",
+      "home": "Home",
+      "about": "About",
+      "placeholder_address": "Type your address here",
+      "placeholder_usage": "What is your current annual electricity consumption?",
+      "placeholder_cost": "What is your average electricity price?",
+      "expected_investment": "What is your expected investment?",
+      "expected_area": "What expected area do your solar panels have?",
+      "navbar_title": "SolarSaver",
+      "next": "next",
+      "previous": "previous"
+    }
+  }
+  

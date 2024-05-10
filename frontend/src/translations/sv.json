@@ -1,0 +1,26 @@
+{
+    "translation": {
+      "summary": "Sammanfattning",
+      "address": "Adress",
+      "investment": "Investering",
+      "area": "Område",
+      "cost": "Kostnad",
+      "usage": "Förbrukning",
+      "calculate_button": "Beräkna min ACCF",
+      "insert_address": "Ange adress",
+      "insert_roofarea": "Ange takområde",
+      "insert_powercost": "Ange elförbrukning",
+      "check": "Kontrollera",
+      "home": "Hem",
+      "about": "Om oss",
+      "placeholder_address": "Skriv din adress här",
+      "placeholder_usage": "Vad är din nuvarande årsförbrukning av el?",
+      "placeholder_cost": "Vad är ditt genomsnittliga elpris?",
+      "expected_investment": "Vad är din förväntade investering?",
+      "expected_area": "Vilken förväntad area har dina solceller?",
+      "navbar_title": "SolarSaver",
+      "next": "nästa",
+      "previous": "förgående"
+    }
+  }
+  
