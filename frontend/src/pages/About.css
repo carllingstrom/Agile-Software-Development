@@ -1,0 +1,107 @@
+.about-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+}
+
+.about-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+.about-nav a, .menu-icon {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.header-content {
+  text-align: left;
+  position: relative;
+  top: -80px; 
+}
+
+.lightning-logo {
+  width: 80px;
+  position: relative; 
+  top: 35px; 
+  margin-left: 25px;
+}
+
+.solar-panel-text {
+  font-size: 1.5em; 
+  font-weight: bold;
+  display: block; 
+  margin-top: 0.5rem; 
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 492px;
+  border-radius: 12px 0px 0px 0px;
+  margin-right: 2rem;
+}
+
+.logo-image {
+  width: 600px; 
+  align-self: center; 
+}
+
+.about-logo {
+  width: 450px; 
+  height: 450px; 
+  border-radius: 50%;
+  overflow: hidden; 
+  margin-left: 105px;
+}
+
+.about-logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.green-box {
+    justify-content: space-between; 
+    background-color: #e4f5d4; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%; 
+    box-sizing: border-box; 
+}
+
+.green-box h2, .green-box p {
+    margin: 0 0 10px 0; 
+}
+
+.green-box {
+    min-height: 300px; 
+}
+
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+}

@@ -8,6 +8,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import enTranslation from './translations/en.json'; 
 import svTranslation from './translations/sv.json'; 
+import About from './pages/About.jsx';
 
 i18n
   .use(initReactI18next)
@@ -33,6 +34,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/about' element={<About/>}/>
+        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
