@@ -36,7 +36,7 @@ Make sure you have the following installed on your machine:
 
 2. Install the necessary Python dependencies (preferably in a virtual environment):
     ```sh
-    pip install -r requirements.txt
+    pip install flask
     ```
 
 ## Running the Project
@@ -65,7 +65,6 @@ Make sure you have the following installed on your machine:
     python app.py
     ```
 
-## Directory Structure
 
 
 
