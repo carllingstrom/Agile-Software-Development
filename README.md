@@ -1,6 +1,76 @@
 
 # **Solar Panel Economic Feasibility Calculator**
 
+# Project Setup
+
+This project uses Vite/React for the frontend and Flask for the backend.
+
+## Prerequisites
+
+Make sure you have the following installed on your machine:
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Python (v3.7 or later)
+- Flask (can be installed via pip)
+
+## Installation
+
+### Frontend
+
+1. Navigate to the frontend directory:
+    ```sh
+    cd frontend
+    ```
+
+2. Install the necessary dependencies:
+    ```sh
+    npm install
+    ```
+
+### Backend
+
+1. Navigate to the backend directory:
+    ```sh
+    cd backend
+    ```
+
+2. Install the necessary Python dependencies (preferably in a virtual environment):
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Running the Project
+
+### Frontend
+
+1. Navigate to the frontend directory if you're not already there:
+    ```sh
+    cd frontend
+    ```
+
+2. Start the development server:
+    ```sh
+    npm run dev
+    ```
+
+### Backend
+
+1. Navigate to the backend directory if you're not already there:
+    ```sh
+    cd backend
+    ```
+
+2. Start the Flask application:
+    ```sh
+    python app.py
+    ```
+
+## Directory Structure
+
+
+
+
+
 ## **Project Description**
 
 This project aims to develop a web application that empowers users to evaluate the economic feasibility of installing solar panels, primarily focusing on the pay-back time. Users can interact with the application by inputting key details like their geographical location, installation costs, and the efficiency of the solar panels. The application will then present users with comprehensive outputs including economic returns, emission reductions, and total power generation capabilities of the panels.
